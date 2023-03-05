@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日系配乐</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../../css/songList.css"><!--通用样式引入-->
+    <script src="../../js/common.js"></script>
+</head>
+<body onload="loadNav2();alert('由于空间限制,本歌单未加载音频资源');">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <!--歌单信息-->
+    <img src="../../img/cover5.jpg" alt="歌单封面">
+    <div class="listInfo">
+        <p class="listName">日系配乐</p>
+        <p>小木曾雪菜 <small> 2015/10/02 创建</small></p>
+        <p>类别: <span class="listTag">影视原声</span> <span class="listTag">日语</span> <span class="listTag">ACG</span> </p>
+        <p>介绍: 封面画师ASK：http://weibo.com/askzy;
+            日本是一个能把来自别处的文化融汇贯通，并不断挖掘其深度至极致的国家。
+            靠着这一股匠人精神，日本音乐界也是百花齐放，产生了许多优秀的作曲家：随意驾驭任何音乐风格的菅野洋子、气势雄厚旋律动人的川井憲次、
+            恢弘大气征服众人的泽野弘之...
+         </p>
+    </div>
+
+    <!--歌曲列表-->
+    <div class="songList">
+        <p class="title">歌曲列表</p>
+        <hr>
+        <table>
+            <!--列名-->
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>播放</th>
+                <th>歌曲标题</th>
+                <th>时长</th>
+                <th>歌手</th>
+                <th>专辑</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><button class="play"></button></td>
+                <td>Silent Love</td>
+                <td>06:52</td>
+                <td>久石譲</td>
+                <td>あの夏、いちばん静かな海</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><button class="play"></button></td>
+                <td>Merry Christmas Mr. Lawrence</td>
+                <td>04:51</td>
+                <td>坂本龍一</td>
+                <td>Revolution ～私たちの望むものは～</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><button class="play"></button></td>
+                <td>Lullaby of Resembool</td>
+                <td>02:13</td>
+                <td>千住明</td>
+                <td>鋼の錬金術師</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><button class="play"></button></td>
+                <td>遺サレタ場所/斜光</td>
+                <td>06:22</td>
+                <td>岡部啓一</td>
+                <td>NieR:Automata Original Soundtrack</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><button class="play"></button></td>
+                <td>騎士王の誇り</td>
+                <td>02:25</td>
+                <td>川井憲次</td>
+                <td>Fate/Stay night A.OST</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

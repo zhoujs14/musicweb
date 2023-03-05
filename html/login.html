@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    <script src="../js/login.js"></script><!--引入登录注册相关js函数-->
+    <script src="../js/common.js"></script><!--引入通用js代码-->
+
+    <style>
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body onload="loadNav()">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<!--提交注册信息-->
+<div id="container" style="height: 920px">
+    <p class="title">欢迎来到树音</p>
+    <hr>
+    <div class="loginDiv">
+
+        <form name="loginForm" onsubmit="return false">
+            <table>
+                <caption class="title">登录/注册开始你的音乐之旅</caption>
+                <tr>
+                    <td><img src="../img/cover.jpg"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="昵称" name="name"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="密码" name="pw"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="手机号" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="验证码" style="width: 65%;margin-right: 0" name="code">
+                        <button type="button" id="codeBtn" onclick="randomCode()">获取验证码<!--用随机数生成-->
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="login()" style="margin-left: 20px">登录</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="register()" style="margin-left: 20px">注册</button>
+                    </td>
+                </tr>
+                </tbody>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

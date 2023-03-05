@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>树音</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../css/poster.css"><!--海报样式引入-->
+    <script src="../js/poster.js"></script><!--引入切换图片的js代码-->
+    <script src="../js/common.js"></script><!--引入通用js代码-->
+    <script src="../js/player.js"></script><!--引入音乐播放/切换相关js -->
+    <style>
+        button{
+            margin-top: 40px;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+<body onload="loadNav();initPlayer(0);autoChangePoster()">
+<!--导航栏-->
+<!--================================================================================================-->
+<header>
+    <nav></nav><!--内容由js函数引入-->
+</header>
+
+<!--主要内容-->
+<!--================================================================================================-->
+<div id="container">
+    <!--================================================================================================-->
+    <!--滚动海报-->
+    <div id="poster">
+        <div class="changePicture"><a href="javascript:lastPoster()">&lt;&nbsp;</a></div><!--切换上一张图片-->
+        <img style="float: left" id="postImg" src="../img/p1.jpg" alt="海报" width="90%" height="90%"><!--默认海报-->
+        <div class="changePicture"><a href="javascript:nextPoster()">&nbsp;&gt;</a></div><!--切换下一张图片-->
+    </div>
+
+    <!--================================================================================================-->
+    <!--推荐歌单-->
+    <div id="recommend">
+        <p class="title">推荐歌单</p>
+        <hr/>
+        <!--推荐歌单1-->
+        <div class="box">
+            <a href="songList/list1.html">
+                <img src="../img/cover1.jpg" alt="歌单封面1">
+            </a>
+            <a href="songList/list1.html"><p> 重装小兔的歌单</p></a>
+            <p><small>by 布洛尼亚</small></p>
+        </div>
+        <!--推荐歌单2-->
+        <div class="box">
+            <a href="songList/list2.html">
+                <img src="../img/cover2.jpg" alt="歌单封面2">
+            </a>
+            <a href="songList/list2.html"><p>《我的三体》角色曲合集</p></a>
+            <p><small>by 清寒慕雪淡若尘</small></p>
+        </div>
+        <!--推荐歌单3-->
+        <div class="box">
+            <a href="songList/list3.html">
+                <img src="../img/cover3.jpg" alt="歌单封面3">
+            </a>
+            <a href="songList/list3.html"><p>电影留声｜邪典时刻 神来之曲</p></a>
+            <p><small>by 下一颗巧克力</small></p>
+        </div>
+        <!--推荐歌单4-->
+        <div class="box">
+            <a href="songList/list4.html">
+                <img src="../img/cover4.jpg" alt="歌单封面4">
+            </a>
+            <a href="songList/list4.html"><p>G.E.M.邓紫棋精选集【珍藏】</p></a>
+            <p><small>by -星晴</small></p>
+        </div>
+    </div>
+
+    <!--================================================================================================-->
+    <!--推荐内容-->
+    <div id="todayPick">
+        <!--================================================================================================-->
+        <!--精选评论-->
+        <div class="box">
+            <p class="title">精选评论</p>
+            <hr/>
+            <img src="../img/comment.jpg" style="margin: 15px auto">
+                唯一不可阻挡的是时间，它像一把利刃，无声地切开了坚硬和柔软的一切，恒定的向前推进着，没有任何东西能够使它的行径产生丝毫颠簸，它却改变着一切。
+        </div>
+
+        <!--================================================================================================-->
+        <!--歌曲推荐-->
+        <div class="box" style="width: 840px">
+            <p class="title">今日精选</p>
+            <hr/>
+            <!--歌曲列表-->
+            <ul id="songList">
+                <!--一号推荐歌曲-->
+                <li>
+                    <!--封面-->
+                    <img src="../img/cover.jpg" alt="默认封面">
+                    <!--歌曲信息-->
+                    <div class="songInfo">
+                        <p class="songTitle">Dancin</p>
+                        <p class="singer"> Aaron Smith</p>
+                    </div>
+                    <!--播放暂停按钮-->
+                    <button class="pause" onclick="play(0)"></button>
+                </li>
+                <!--二号推荐歌曲-->
+                <li>
+                    <img src="../img/cover.jpg" alt="默认封面">
+                    <div class="songInfo">
+                        <p class="songTitle">黑暗森林</p>
+                        <p class="singer">一清清清</p>
+                    </div>
+                    <button class="play" onclick="play(1)"></button>
+                </li>
+                <!--三号推荐歌曲-->
+                <li>
+                    <img src="../img/cover.jpg" alt="默认封面">
+                    <div class="songInfo">
+                        <p class="songTitle">夜航星</p>
+                        <p class="singer">不才/三体宇宙</p>
+                    </div>
+                    <button class="play" onclick="play(2)"></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+            <source src="../song/dancin.mp3"><!--在js中切换源来切换不同歌曲-->
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

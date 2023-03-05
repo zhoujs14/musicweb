@@ -1,0 +1,207 @@
+/*页面通用样式*/
+body{
+    background-color: antiquewhite;/*设置body背景颜色*/
+    padding: 0;
+    margin: 0;/*清除默认边距*/
+}
+
+/*导航栏相关的样式文件*/
+/*设置导航栏背景色*/
+header {
+    background-color: #333;
+}
+
+/*设置长度，使导航栏内容对齐正文部分*/
+nav {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*设置导航栏无序列表样式*/
+nav > ul {
+    list-style: none; /*隐藏标号*/
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden; /*隐藏溢出内容*/
+}
+
+/*设置导航中列表项浮动*/
+nav li {
+    float: left; /*使得列表水平排列*/
+}
+
+/*设置导航中链接的样式*/
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*设置超链接激活样式*/
+nav li a:hover {
+    background-color: #111; /*设置背景变暗*/
+}
+
+/*设置容器宽度和边距*/
+#container {
+    height: 1400px;
+    width: 1300px;
+    margin: 0 auto 50px;/*居中*/
+    background: white;
+}
+
+/*设置容器中切割线样式*/
+#container hr{
+    margin: 0 20px 20px;
+    height: 3px;
+    background-color: darkslategray;
+    border: none;
+}
+
+/*标题样式*/
+#container .title{
+    color: darkgray;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 28px 10px;
+}
+
+/*=============================================================================================================*/
+/*推荐歌单样式*/
+.box{
+    float: left;/*设置浮动使得歌单可排成一排*/
+    width: 240px;
+    height: 300px;
+    /*border: black 1px solid;*/
+    margin: 20px 40px;
+    text-align: center;
+    color: darkgray;
+}
+
+/*推荐歌单中超链接的样式*/
+.box a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+/*推荐歌单超链接激活样式*/
+.box a:hover{
+    color: lightskyblue;
+}
+
+/*歌单封面图片样式*/
+.box img{
+    display: block;/*设置为块级元素*/
+    margin: 5px auto;/*居中*/
+    width: 90%;
+    height: 215px;
+}
+
+/*设置p的边距 不设置的话行距很大*/
+.box p{
+    margin: 1px auto;
+}
+
+/*=============================================================================================================*/
+/*精选部分样式*/
+#todayPick{
+    clear: both;/*清除浮动*/
+}
+
+/*评论框*/
+#todayPick .box{
+    width: 300px;
+    height: 400px;
+    color: black;
+    font-size: 16px;
+}
+
+/*歌曲列表样式*/
+#songList{
+    list-style: none;
+    text-align: left;
+}
+
+/*歌曲列表中每一列的样式*/
+#songList li{
+    margin: 3px 3px 3px -20px;
+    width: 100%;
+    height: 115px;
+    background: antiquewhite;
+}
+
+/*歌曲列表中的图片样式*/
+#songList img{
+    display: block;
+    width: 95px;
+    height: 95px;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-left: 6px;
+    float: left;
+}
+
+/*歌曲信息样式*/
+.songInfo{
+    float: left;/*浮动*/
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/*歌曲标题样式*/
+.songTitle{
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+/*歌手名样式*/
+.singer{
+    font-size: 14px;
+    text-indent: 2px;
+}
+
+/*按钮样式*/
+#todayPick button{
+    display: block;
+    float: right;/*设置右浮动,让按钮显示在右边*/
+    margin-right: 30px;/*设置右边距 控制按钮水平位置*/
+    padding: 0;
+    background-color: antiquewhite;/*设置背景色与歌曲列表一致*/
+    box-sizing: border-box;
+    outline: none;/*点击后不显示边框*/
+}
+
+/*播放按钮样式*/
+.play{
+    height: 32px;
+    border-style: solid;
+    border-width: 16px 0 16px 32px;/*设置四个边的长度来实现三角形效果(边的次序:上右下左)*/
+    border-color: transparent transparent transparent black;
+}
+
+/*暂停按钮样式*/
+.pause{
+    width: 32px;
+    height: 32px;
+    border-style: double;/*用border实现暂停按钮的两个竖线*/
+    border-width: 0px 0px 0px 32px;
+    border-color: #202020;
+}
+
+/*设置播放栏样式*/
+audio{
+    margin: 0 auto;
+    width: 1300px;
+    outline: none;/*消除点击时出现的框*/
+}
+
+/*始终让播放器控件位于底部*/
+footer{
+    position: fixed;
+    bottom: 0;
+}

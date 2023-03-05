@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邪典时刻</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../../css/songList.css"><!--通用样式引入-->
+    <script src="../../js/common.js"></script>
+    <script src="../../js/player.js"></script>
+</head>
+<body onload="loadNav2();initPlayer(3)">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <!--歌单信息-->
+    <img src="../../img/cover3.jpg" alt="歌单封面">
+    <div class="listInfo">
+        <p class="listName">电影留声｜邪典时刻 神来之曲</p>
+        <p>下一颗巧克力 <small> 2020/12/07 创建</small></p>
+        <p>类别: <span class="listTag">经典</span> <span class="listTag">影视原声</span> <span class="listTag">欧美</span> </p>
+        <p>介绍: 歌单封面：电影《美国精神病人》; 邪典电影（Cult Film）一种电影的风格，而非严格意义上的电影类型。其实硬要给邪典电影套上一个死气的定义，这事本身就很不”邪典“。这里不做解释，感兴趣的可以自行百科。</p>
+    </div>
+
+    <!--歌曲列表-->
+    <div class="songList">
+        <p class="title">歌曲列表</p>
+        <hr>
+        <table>
+            <!--列名-->
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>播放</th>
+                <th>歌曲标题</th>
+                <th>时长</th>
+                <th>歌手</th>
+                <th>专辑</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><button class="play" onclick="play(0)"></button></td>
+                <td>Everybody Be cool</td>
+                <td>00:04</td>
+                <td>George Clooney</td>
+                <td>From Dusk Till Dawn</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><button class="play" onclick="play(1)"></button></td>
+                <td>Misirlou</td>
+                <td>02:14</td>
+                <td>Dick Dale</td>
+                <td>The Tarantino Connection</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><button class="play" onclick="play(2)"></button></td>
+                <td>Where Is My Mind</td>
+                <td>03:52</td>
+                <td>Pixies</td>
+                <td>Essential Soundtracks</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><button class="play" onclick="play(3)"></button></td>
+                <td>Believe</td>
+                <td>04:35</td>
+                <td>Franka Potente</td>
+                <td>Run Lola Run</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+            <source src="../../song/beCool.mp3"><!--在js中切换源来切换不同歌曲-->
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

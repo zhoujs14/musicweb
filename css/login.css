@@ -1,0 +1,46 @@
+/*设置登录界面div样式*/
+div {
+    margin: 0 auto;/*居中*/
+    width: 1300px;/*宽度*/
+    height: 680px;
+    background: white;/*白色背景*/
+    padding-top: 30px;/*设置上方padding留白*/
+}
+
+table {
+    margin: 0 auto;/*居中*/
+    width: 380px;
+    height: 150px;
+    background: antiquewhite;
+}
+
+td{
+    width: 380px;
+    margin-left: 10px;
+}
+
+input {
+    width: 380px;
+    height: 32px;
+    margin: 0 20px;
+    padding: 1px;
+}
+
+button {
+    width: 380px; /*此处让登录、注册按钮与输入框长度一致*/
+    height: 38px;
+    margin-top: 5px;
+    padding: 1px;
+    background: darkseagreen;
+}
+
+#codeBtn{
+    width: 90px;
+    float: right;/*右浮动*/
+    background-color: dodgerblue;/*按钮颜色*/
+    color: white;/*文字颜色*/
+     border: black solid 1px;/*按钮边框*/
+    /*设置margin来控制位置*/
+    margin-right: 20px;
+    margin-top: 0;
+}

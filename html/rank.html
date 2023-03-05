@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排行榜</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../css/songList.css"><!--歌曲列表样式引入-->
+    <link rel="stylesheet" type="text/css" href="../css/rank.css"><!--排行榜样式引入-->
+    <script src="../js/common.js"></script><!--引入通用js代码-->
+    <script src="../js/rank.js"></script><!--引入排行榜相关js代码-->
+    <script src="../js/player.js"></script><!--引入排行榜相关js代码-->
+    <style>
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<body onload="loadNav();showRank1();">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <div class="rankList">
+        <p class="title">音乐排行榜</p>
+        <hr>
+    </div>
+    <div id="rankCategory">
+        <p class="title">分类排行榜</p>
+        <hr>
+        <p class="rank"><a href="javascript:showRank1();initPlayer(5)">热歌榜</a></a></p>
+        <p class="rank"><a href="javascript:showRank2();initPlayer(6)">英文榜</a></p>
+        <p class="rank"><a href="javascript:showRank3();initPlayer(7)">中文榜</a></p>
+    </div>
+        <div class="songList">
+            <p class="title" id="rankTitle">热歌榜</p>
+            <hr>
+            <!--歌曲列表-->
+            <table>
+                <!--列名-->
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>播放</th>
+                    <th>歌曲标题</th>
+                    <th>时长</th>
+                    <th>歌手</th>
+                    <th>专辑</th>
+                </tr>
+                </thead>
+                <tbody id="rankTbody">
+                <!--这里的内容由js函数获取-->
+                </tbody>
+            </table>
+    </div>
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+            <source src="../song/runaway.mp3"><!--在js中切换源来切换不同歌曲-->
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

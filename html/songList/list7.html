@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2017上半年百首热门EDM精选</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../../css/songList.css"><!--通用样式引入-->
+    <script src="../../js/common.js"></script>
+</head>
+<body onload="loadNav2();alert('由于空间限制,本歌单未加载音频资源')">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <!--歌单信息-->
+    <img src="../../img/cover7.jpg" alt="歌单封面">
+    <div class="listInfo">
+        <p class="listName">2017上半年百首热门EDM精选</p>
+        <p>避难所Shelter <small> 2017/06/26 创建</small></p>
+        <p>类别: <span class="listTag">欧美</span> <span class="listTag">电子</span> <span class="listTag">舞曲</span> </p>
+        <p>介绍: 近年来EDM开始和其它主流的音乐类型融合，变的越来越流行化，开始更注重人声部分的表现，在作曲部分也愈加细腻，
+            融入了更多的情感和旋律。更多的知名制作人与人气实力派歌手的合作也让更多的乐迷接受了这种类型的音乐，
+            在Future Bass、Tropical house、Moombahton的热潮下，EDM的整体流行趋势也渐渐从追求精神刺激的电音慢慢转变为大众可以在日常放松时播放而不嫌吵闹的音乐。
+        </p>
+    </div>
+
+    <!--歌曲列表-->
+    <div class="songList">
+        <p class="title">歌曲列表</p>
+        <hr>
+        <table>
+            <!--列名-->
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>播放</th>
+                <th>歌曲标题</th>
+                <th>时长</th>
+                <th>歌手</th>
+                <th>专辑</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><button class="play"></button></td>
+                <td>Something Just Like This</td>
+                <td>04:07</td>
+                <td>The Chainsmokers</td>
+                <td>Something Just Like This</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><button class="play"></button></td>
+                <td>Mama</td>
+                <td>03:04</td>
+                <td>Jonas Blue</td>
+                <td>Mama</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><button class="play"></button></td>
+                <td>Scared To Be Lonely</td>
+                <td>03:40</td>
+                <td>Dua Lipa</td>
+                <td>Scared To Be Lonely</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><button class="play"></button></td>
+                <td>It Ain't Me</td>
+                <td>03:39</td>
+                <td>Selena Gomez</td>
+                <td>It Ain't Me</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><button class="play"></button></td>
+                <td>No Promises</td>
+                <td>03:43</td>
+                <td>Cheat Codes</td>
+                <td>No Promises</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

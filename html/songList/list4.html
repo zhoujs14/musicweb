@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G.E.M.邓紫棋精选集</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../../css/songList.css"><!--通用样式引入-->
+    <script src="../../js/common.js"></script>
+    <script src="../../js/player.js"></script>
+</head>
+<body onload="loadNav2();initPlayer(4)">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <!--歌单信息-->
+    <img src="../../img/cover4.jpg" alt="歌单封面">
+    <div class="listInfo">
+        <p class="listName">G.E.M.邓紫棋精选集</p>
+        <p>-星晴 <small> 2015/11/07 创建</small></p>
+        <p>类别: <span class="listTag">华语</span> <span class="listTag">流行</span> <span class="listTag">90后</span> </p>
+        <p>介绍: G.E.M.鄧紫棋，香港创作型女歌手。2008年7月10日以16岁之龄出道她的《G.E.M.X.X.X.live世界巡回演唱会》于2015年十一月完成73场，打破之前华语女歌手单轮巡演的记录。更于同年成为首位在瑞士阿尔卑斯山脉少女峰举办音乐会的中国音乐人。</p>
+    </div>
+
+    <!--歌曲列表-->
+    <div class="songList">
+        <p class="title">歌曲列表</p>
+        <hr>
+        <table>
+            <!--列名-->
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>播放</th>
+                <th>歌曲标题</th>
+                <th>时长</th>
+                <th>歌手</th>
+                <th>专辑</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><button class="play" onclick="play(0)"></button></td>
+                <td>飘向北方</td>
+                <td>04:25</td>
+                <td>黄明志/邓紫棋</td>
+                <td>飘向北方</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><button class="play" onclick="play(1)"></button></td>
+                <td>光年之外</td>
+                <td>03:02</td>
+                <td>邓紫棋</td>
+                <td>我想和你唱 第二季 第9期</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><button class="play" onclick="play(2)"></button></td>
+                <td>泡沫</td>
+                <td>03:59</td>
+                <td>邓紫棋</td>
+                <td>我想和你唱 第二季 第9期</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><button class="play" onclick="play(3)"></button></td>
+                <td>心之焰</td>
+                <td>02:28</td>
+                <td>邓紫棋</td>
+                <td>心之焰</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><button class="play" onclick="play(4)"></button></td>
+                <td>Victory</td>
+                <td>03:02</td>
+                <td>邓紫棋</td>
+                <td>Victoria</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+            <source src="../../song/towardNorth.mp3"><!--在js中切换源来切换不同歌曲-->
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

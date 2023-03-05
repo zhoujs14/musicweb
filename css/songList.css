@@ -1,0 +1,91 @@
+/*歌单封面*/
+img{
+    display: block;/*设为块级元素*/
+    /*通过左边距 上边距控制位置*/
+    margin-top: 55px;
+    margin-left: 55px;
+    float: left;/*向左浮动*/
+    width: 270px;
+    height: 270px;
+    padding: 3px;
+    border: #333333 1px solid;/*边框*/
+}
+
+/*歌单信息样式*/
+.listInfo{
+    float: left;/*左浮动使其与封面在同一行*/
+    width: 800px;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+/*歌单名*/
+.listName{
+    margin-left: -15px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/*歌单标签样式*/
+.listTag{
+    margin: 0 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+}
+
+/*歌曲列表样式*/
+.songList{
+    clear: both;/*清除上方的浮动*/
+    margin: 0 10px 10px 0;
+    padding-top: 30px;
+}
+
+.songList button{
+    outline: none;/*点击后不显示边框*/
+}
+
+/*歌曲列表中table的样式 用table来控制布局*/
+.songList table{
+    text-align: center;
+    border: #333333 1px solid;/*边框*/
+    width: 1200px;/*宽度*/
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+.songList td{
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+}
+
+/*播放按钮样式*/
+button{
+    background-color: white;
+    float: none;
+    margin: 0 auto;
+}
+
+/*播放按钮样式*/
+.play{
+    height: 16px;
+    border-style: solid;
+    border-width: 8px 0 8px 16px;/*设置四个边的长度来实现三角形效果(边的次序:上右下左)*/
+    border-color: transparent transparent transparent black;
+}
+
+/*暂停按钮样式*/
+.pause{
+    width: 16px;
+    height: 16px;
+    border-style: double;/*用border实现暂停按钮的两个竖线*/
+    border-width: 0px 0px 0px 16px;
+    border-color: #202020;
+}
+
+td{
+    height: 32px;
+}

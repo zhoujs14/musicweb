@@ -1,0 +1,21 @@
+/*这里是海报相关的样式*/
+
+/*设置切换图片箭头样式*/
+.changePicture {
+    float: left;
+    font-size: 55px;
+    margin-top: 165px;
+}
+
+/*海报切换超链接样式 主要是让鼠标在切换按钮上有交互提示*/
+#poster a {
+    text-decoration: none;
+    color: black;
+}
+
+#poster{
+    margin: 0 auto;/*设置边距*/
+    padding-top: 25px;
+    height: 450px;
+    width: 100%;
+}

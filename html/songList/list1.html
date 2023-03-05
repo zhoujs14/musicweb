@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重装小兔歌单</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../../css/songList.css"><!--通用样式引入-->
+    <script src="../../js/common.js"></script>
+    <script src="../../js/player.js"></script>
+</head>
+<body onload="loadNav2();initPlayer(1)">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <!--歌单信息-->
+    <img src="../../img/cover1.jpg" alt="歌单封面">
+    <div class="listInfo">
+        <p class="listName">重装小兔的歌单</p>
+        <p>布洛尼亚 <small> 2021/1/15创建</small></p>
+        <p>类别: <span class="listTag">英语</span> <span class="listTag">流行</span> <span class="listTag">摇滚</span> </p>
+        <p>介绍: 重装小兔最爱的英文歌单</p>
+    </div>
+
+    <!--歌曲列表-->
+    <div class="songList">
+        <p class="title">歌曲列表</p>
+        <hr>
+        <table>
+            <!--列名-->
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>播放</th>
+                <th>歌曲标题</th>
+                <th>时长</th>
+                <th>歌手</th>
+                <th>专辑</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><button class="play" onclick="play(0)"></button></td>
+                <td>Booty Music</td>
+                <td>03:01</td>
+                <td>Deep Side</td>
+                <td>Git Fresh</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><button class="play" onclick="play(1)"></button></td>
+                <td>Dancin</td>
+                <td>03:18</td>
+                <td>Aaron Smith</td>
+                <td>Dancin</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><button class="play" onclick="play(2)"></button></td>
+                <td>Holding Hands</td>
+                <td>03:23</td>
+                <td>Melis</td>
+                <td>Paralles</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><button class="play" onclick="play(3)"></button></td>
+                <td>Runaway</td>
+                <td>03:38</td>
+                <td>Sasha Sloan</td>
+                <td>Runaway</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><button class="play" onclick="play(4)"></button></td>
+                <td>Jerk It Out</td>
+                <td>03:17</td>
+                <td>Caesars</td>
+                <td>The Best of 2005</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+            <source src="../../song/bootyMusic.mp3"><!--在js中切换源来切换不同歌曲-->
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

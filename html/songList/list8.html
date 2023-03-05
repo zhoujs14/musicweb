@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轻音集</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"><!--通用样式引入-->
+    <link rel="stylesheet" type="text/css" href="../../css/songList.css"><!--通用样式引入-->
+    <script src="../../js/common.js"></script>
+</head>
+<body onload="loadNav2();alert('由于空间限制,本歌单未加载音频资源')">
+<!--导航栏-->
+<header>
+    <nav></nav>
+</header>
+
+<div id="container" style="height: 920px">
+    <!--歌单信息-->
+    <img src="../../img/cover8.jpg" alt="歌单封面">
+    <div class="listInfo">
+        <p class="listName">《轻音集》</p>
+        <p>沧暮归云云 <small> 2017/08/08 创建</small></p>
+        <p>类别: <span class="listTag">轻音乐</span> <span class="listTag">孤独</span> <span class="listTag">清新</span> </p>
+        <p>介绍: 【Blue100% Purify your Soul】 【Escape this moment】
+        </p>
+    </div>
+
+    <!--歌曲列表-->
+    <div class="songList">
+        <p class="title">歌曲列表</p>
+        <hr>
+        <table>
+            <!--列名-->
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>播放</th>
+                <th>歌曲标题</th>
+                <th>时长</th>
+                <th>歌手</th>
+                <th>专辑</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><button class="play"></button></td>
+                <td>Ocean Echo</td>
+                <td>02:38</td>
+                <td>Lazer Way</td>
+                <td>Ocean Echo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><button class="play"></button></td>
+                <td>澈</td>
+                <td>03:52</td>
+                <td>SynBlazer</td>
+                <td>澈</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><button class="play"></button></td>
+                <td>Letter</td>
+                <td>02:13</td>
+                <td>iris</td>
+                <td>Your Friendship Means So Much to Me</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><button class="play"></button></td>
+                <td>旧忆 (instrument)</td>
+                <td>03:59</td>
+                <td>清风至</td>
+                <td>The beginning？</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><button class="play"></button></td>
+                <td>Miss You</td>
+                <td>04:28</td>
+                <td>未泯</td>
+                <td>Miss You</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--播放器-->
+    <!--================================================================================================-->
+    <footer>
+        <audio id="audio" controls="controls" autoplay="autoplay">
+        </audio>
+    </footer>
+</div>
+</body>
+</html>

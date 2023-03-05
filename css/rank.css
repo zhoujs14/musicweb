@@ -1,0 +1,39 @@
+/*排行榜样式*/
+.rankList{
+    padding-top: 30px;/*设置离导航栏的距离*/
+    padding-bottom: 30px;
+}
+
+/*排行榜文字的样式*/
+.rank{
+    padding-left: 30px;
+}
+
+/*左侧排行榜种类选择菜单*/
+#rankCategory{
+    float: left;/*设置浮动以并排排列*/
+    width: 300px;
+    font-size: 18px;
+}
+
+/*菜单中超链接样式*/
+#rankCategory a{
+    text-decoration: none;/*消除超链接下划线*/
+    color: darkred;
+}
+
+/*歌曲列表样式*/
+.songList{
+    clear: none;
+    float: left;
+    width: 900px;
+    padding-top: 0;
+}
+
+/*歌曲列表中table的样式 用table来控制布局*/
+.songList table{
+    text-align: center;
+    border: #333333 1px solid;/*边框*/
+    width: 800px;/*宽度*/
+    margin: 0 auto;
+}
