@@ -1,2 +1,2 @@
 # 静态音乐网站
-# 纯HTML+CSS+JS
+纯HTML+CSS+JS
